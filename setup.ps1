@@ -51,7 +51,7 @@ $vscode_extensions = @(
   'zhuangtongfa.material-theme'
 )
 
-$programs = @('vscode', 'selenium')
+$programs = @('vscode', 'selenium', 'psutils')
 
 # install scoop
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
@@ -68,7 +68,7 @@ foreach ($program in $programs) {
 }
 
 # vscode settings
-iwr -useb -URI $vscode_settings_url -outFile $vscode_settings_path
+sudo iwr -useb -URI $vscode_settings_url -outFile $vscode_settings_path
 
 # install vscode extensions
 

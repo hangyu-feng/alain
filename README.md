@@ -5,6 +5,8 @@ tailored setup script for alain
 
 To use the script:
 
+1. open powershell
+
 ```pwsh
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 # type "A" then hit enter
