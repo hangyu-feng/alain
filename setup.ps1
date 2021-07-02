@@ -53,28 +53,26 @@ $vscode_extensions = @(
 )
 
 $programs = @('vscode', 'selenium', 'psutils')
-$fonts = @('Cascadia-Code', 'FiraCode', 'Hack-NF', 'Inconsolata-NF', 'JetBrains-Mono', 'SourceCodePro')
+$fonts = @('Cascadia-Code', 'FiraCode', 'hack-font', 'Inconsolata-NF', 'JetBrains-Mono', 'SourceCodePro-NF')
 
 # install scoop
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 
-if (!(Get-Command scoop)) {
-  iwr -useb get.scoop.sh | iex
-}
-scoop install git
+iwr -useb get.scoop.sh | iex
+scoop install git  # required for scoop buckets
 scoop bucket add extras
 scoop bucket add nerd-fonts
 
 # install programs using scoop
-foreach ($program in $programs) {
-  scoop install $program
-}
+scoop install $programs
 
 # install fonts
 sudo scoop install $fonts
 
 # vscode settings
-mkdir $vscode_settings_folder
+if (!(test-path -path $vscode_settings_folder)) {
+  mkdir $vscode_settings_folder
+}
 iwr -useb -URI $vscode_settings_url -outfile $vscode_settings_path
 
 # install vscode extensions
