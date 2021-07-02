@@ -6,11 +6,7 @@ tailored setup script for alain
 To use the script:
 
 ```pwsh
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
-# type "A" then hit enter
-# [A] Yes to All
+Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 
-cd ~
-wget -UseBasicParsing -URI "https://raw.githubusercontent.com/hangyu-feng/alain/master/setup.ps1" -outFile "./setup.ps1"
-./setup.ps1
+iwr -useb "https://raw.githubusercontent.com/hangyu-feng/alain/master/setup.ps1" | iex
 ```

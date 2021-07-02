@@ -68,7 +68,7 @@ foreach ($program in $programs) {
 }
 
 # vscode settings
-wget -UseBasicParsing -URI $vscode_settings_url -outFile $vscode_settings_path
+iwr -useb -URI $vscode_settings_url -outFile $vscode_settings_path
 
 # install vscode extensions
 
