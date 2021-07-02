@@ -7,6 +7,7 @@ $programs = @('git', 'vscode', 'selenium')
 # install scoop
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 iwr -useb get.scoop.sh | iex
+scoop bucket add extras
 
 # install programs using scoop
 foreach ($program in $programs) {
