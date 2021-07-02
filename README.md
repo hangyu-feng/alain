@@ -7,8 +7,8 @@ To use the script:
 
 ```pwsh
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
-<!-- type "A" then hit enter -->
-<!-- [A] Yes to All -->
+# type "A" then hit enter
+# [A] Yes to All
 
 cd ~
 wget -UseBasicParsing -URI "https://raw.githubusercontent.com/hangyu-feng/alain/master/setup.ps1" -outFile "./setup.ps1"

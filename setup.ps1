@@ -1,6 +1,5 @@
 $vscode_settings_path = "~\AppData\Roaming\Code\User\settings.json"
 $vscode_settings_url = "https://raw.githubusercontent.com/hangyu-feng/alain/master/configs/vscode/settings.json"
-$vscode_extensions_url = "https://raw.githubusercontent.com/hangyu-feng/alain/master/configs/vscode/extensions.txt"
 
 $vscode_extensions = @(
   'arcticicestudio.nord-visual-studio-code',
@@ -49,7 +48,7 @@ $vscode_extensions = @(
   'tinkertrain.theme-panda',
   'tomphilbin.gruvbox-themes',
   'VisualStudioExptTeam.vscodeintellicode',
-  'zhuangtongfa.material-theme'
+  'zhuangtongfa.material-theme',
 )
 
 $programs = @('vscode', 'selenium')
@@ -73,6 +72,6 @@ wget -UseBasicParsing -URI $vscode_settings_url -outFile $vscode_settings_path
 
 # install vscode extensions
 
-foreach ($extension in $vscode_extensions) {
-  code --install-extension $extension
-}
+# foreach ($extension in $vscode_extensions) {
+#   code --install-extension $extension
+# }
