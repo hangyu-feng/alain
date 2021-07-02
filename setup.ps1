@@ -1,4 +1,5 @@
-$vscode_settings_path = "~\AppData\Roaming\Code\User\settings.json"
+$vscode_settings_folder = "~\AppData\Roaming\Code\User"
+$vscode_settings_path = "${vscode_settings_foler}\settings.json"
 $vscode_settings_url = "https://raw.githubusercontent.com/hangyu-feng/alain/master/configs/vscode/settings.json"
 
 $vscode_extensions = @(
@@ -68,7 +69,8 @@ foreach ($program in $programs) {
 }
 
 # vscode settings
-# sudo iwr -useb -URI $vscode_settings_url -outFile $vscode_settings_path
+mkdir $vscode_settings_folder
+iwr -useb -URI $vscode_settings_url -outFile $vscode_settings_path
 
 # install vscode extensions
 
