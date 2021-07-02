@@ -70,7 +70,7 @@ foreach ($program in $programs) {
 
 # vscode settings
 mkdir $vscode_settings_folder
-iwr -useb -URI $vscode_settings_url -outFile $vscode_settings_path
+iwr -useb -URI $vscode_settings_url | out-file -Force $vscode_settings_path
 
 # install vscode extensions
 
