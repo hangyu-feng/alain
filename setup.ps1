@@ -74,6 +74,6 @@ iwr -useb -URI $vscode_settings_url -outfile $vscode_settings_path
 
 # install vscode extensions
 
-# foreach ($extension in $vscode_extensions) {
-#   code --install-extension $extension
-# }
+foreach ($extension in $vscode_extensions) {
+  code --install-extension $extension
+}
