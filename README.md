@@ -7,6 +7,7 @@ To use the script:
 
 ```pwsh
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+<!-- type "A" then hit enter -->
 <!-- [A] Yes to All -->
 
 cd ~

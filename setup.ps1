@@ -1,5 +1,5 @@
 $vscode_settings_path = "~\AppData\Roaming\Code\User\settings.json"
-$vscode_settings_url = "https://raw.githubusercontent.com/hangyu-feng/alain/master/configs/vscode/extensions.txt"
+$vscode_settings_url = "https://raw.githubusercontent.com/hangyu-feng/alain/master/configs/vscode/settings.json"
 $vscode_extensions_url = "https://raw.githubusercontent.com/hangyu-feng/alain/master/configs/vscode/extensions.txt"
 
 $vscode_extensions = @(
@@ -9,7 +9,6 @@ $vscode_extensions = @(
   'dbaeumer.vscode-eslint',
   'DotJoshJohnson.xml',
   'dracula-theme.theme-dracula',
-  'dunstontc.viml',
   'eamodio.gitlens',
   'eg2.vscode-npm-script',
   'Equinusocio.vsc-community-material-theme',
