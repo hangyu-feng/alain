@@ -14,8 +14,8 @@ foreach ($program in $programs) {
 }
 
 # vscode settings
-curl -sS $vscode_settings_url >> $vscode_settings_path
+wget -UseBasicParsing $vscode_settings_url >> $vscode_settings_path
 
 # install vscode extensions
 
-curl -sS $vscode_extensions_url | % { "code --install-extension $_" }
+wget -UseBasicParsing $vscode_extensions_url | % { "code --install-extension $_" }
