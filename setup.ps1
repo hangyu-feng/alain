@@ -1,6 +1,6 @@
 $vscode_settings_path = "~\AppData\Roaming\Code\User\settings.json"
 $vscode_settings_url = "https://raw.githubusercontent.com/hangyu-feng/alain/master/configs/vscode/extensions.txt"
-$vscode_extensions_url = "https://github.com/hangyu-feng/alain/raw/master/configs/vscode/extensions.txt"
+$vscode_extensions_url = "https://raw.githubusercontent.com/hangyu-feng/alain/master/configs/vscode/extensions.txt"
 
 $programs = @('git', 'vscode', 'selenium')
 

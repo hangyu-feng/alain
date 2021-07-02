@@ -10,6 +10,6 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 <!-- [A] Yes to All -->
 
 cd ~
-wget -UseBasicParsing -URI "https://github.com/hangyu-feng/alain/raw/master/setup.ps1" -outFile "./setup.ps1"
+wget -UseBasicParsing -URI "https://raw.githubusercontent.com/hangyu-feng/alain/master/setup.ps1" -outFile "./setup.ps1"
 ./setup.ps1
 ```
