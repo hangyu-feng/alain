@@ -68,7 +68,7 @@ foreach ($program in $programs) {
 }
 
 # vscode settings
-sudo iwr -useb -URI $vscode_settings_url -outFile $vscode_settings_path
+# sudo iwr -useb -URI $vscode_settings_url -outFile $vscode_settings_path
 
 # install vscode extensions
 
