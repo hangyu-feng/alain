@@ -7,6 +7,8 @@ To use the script:
 
 1. open powershell
 
+2. run the following commands
+
 ```pwsh
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 # type "A" then hit enter
