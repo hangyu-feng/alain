@@ -1,0 +1,118 @@
+{
+  "gitlens.views.repositories.location": "gitlens",
+  "gitlens.views.fileHistory.location": "gitlens",
+  "gitlens.views.lineHistory.location": "gitlens",
+  "gitlens.views.compare.location": "gitlens",
+  "gitlens.views.search.location": "gitlens",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.zoomLevel": 0,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontFamily": "Cascadia Mono PL",
+  "debug.console.fontFamily": "Hack",
+  "debug.console.fontSize": 12,
+  "terminal.integrated.fontFamily": "Fira Mono for Powerline",
+  "terminal.external.windowsExec": "",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.autoSave": "afterDelay",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "terminal.integrated.fontWeight": "500",
+  "editor.fontWeight": "400",
+  "editor.tabSize": 2,
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": true,
+  "gitlens.keymap": "none",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.bind.enter.key": false,
+  "latex-workshop.view.pdf.invert": 0.85,
+  "latex-workshop.view.pdf.invertMode.enabled": "auto",
+  "latex-workshop.view.pdf.invertMode.grayscale": 0,
+  "python.languageServer": "Pylance",
+  "powershell.powerShellDefaultVersion": "pwsh",
+  "powershell.powerShellAdditionalExePaths": [
+    {
+      "versionName": "pwsh",
+      "exePath": "C:/Users/VailG/scoop/apps/pwsh/current/pwsh.exe"
+    }
+  ],
+  "editor.renderControlCharacters": false,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "dart.debugExternalLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "remote.SSH.remotePlatform": {
+    "UT": "linux"
+  },
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "matlab.matlabpath": "C:/Program Files/MATLAB/R2020b/bin/matlab.exe",
+  "settingsSync.ignoredSettings": [
+    "-matlab.matlabpath",
+    "resmon.show.cputemp"
+  ],
+  "python.terminal.executeInFileDir": true,
+  "resmon.disk.format": "PercentRemaining",
+  "resmon.show.cputemp": true,
+  "python.defaultInterpreterPath": "C:\\Users\\VailG\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "files.associations": {
+    "*.pl": "prolog"
+  },
+  "editor.acceptSuggestionOnEnter": "off",
+  "workbench.editor.wrapTabs": true,
+  "workbench.editor.pinnedTabSizing": "shrink",
+  "workbench.editor.decorations.badges": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.profiles.windows": {
+    "pwsh": {
+      "path":  "C:/Users/VailG/scoop/apps/pwsh/current/pwsh.exe",
+      "icon": "terminal-powershell"
+    },
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "pwsh",
+}
