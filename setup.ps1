@@ -48,7 +48,7 @@ $vscode_extensions = @(
   'tinkertrain.theme-panda',
   'tomphilbin.gruvbox-themes',
   'VisualStudioExptTeam.vscodeintellicode',
-  'zhuangtongfa.material-theme',
+  'zhuangtongfa.material-theme'
 )
 
 $programs = @('vscode', 'selenium')
