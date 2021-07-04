@@ -83,4 +83,11 @@ foreach ($extension in $vscode_extensions) {
 
 # powershell settings
 git clone "git@github.com:hangyu-feng/alain.git" ~
-pwsh -c "echo '. ~/alain/configs/powershell/Microsoft.PowerShell_profile.ps1' >> $profile"
+$parent_dir = Split-Path $profile -Parent
+if (!(test-path $parent_dir)) {
+  mkdir $parent_dir
+}
+if (!(test-path $profile)) {
+  touch $profile
+}
+sudo pwsh -c "echo '. ~/alain/configs/powershell/Microsoft.PowerShell_profile.ps1' >> $profile"
