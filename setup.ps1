@@ -82,14 +82,16 @@ iwr -useb -URI $vscode_settings_url -outfile $vscode_settings_path
 # }
 
 # powershell settings
-git clone "git@github.com:hangyu-feng/alain.git" ~
-pwsh
-$parent_dir = Split-Path $profile -Parent
-if (!(test-path $parent_dir)) {
-  mkdir $parent_dir
+git clone "https://github.com/hangyu-feng/alain.git" ~
+pwsh -c {
+  $parent_dir = Split-Path $profile -Parent
+  if (!(test-path $parent_dir)) {
+    mkdir $parent_dir
+  }
+  if (!(test-path $profile)) {
+    touch $profile
+  }
+  . ~/alain/configs/powershell/install_powerline.ps1
+  echo ". ~/alain/configs/powershell/Microsoft.PowerShell_profile.ps1" >> $profile
+  . $profile
 }
-if (!(test-path $profile)) {
-  touch $profile
-}
-echo ". ~/alain/configs/powershell/Microsoft.PowerShell_profile.ps1" >> $profile
-. $profile
