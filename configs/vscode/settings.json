@@ -11,9 +11,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.fontFamily": "Cascadia Mono PL",
-  "debug.console.fontFamily": "Hack",
+  "debug.console.fontFamily": "Cascadia Mono PL",
   "debug.console.fontSize": 12,
-  "terminal.integrated.fontFamily": "Fira Mono for Powerline",
+  "terminal.integrated.fontFamily": "Cascadia Mono PL",
   "terminal.external.windowsExec": "",
   "diffEditor.ignoreTrimWhitespace": false,
   "files.trimTrailingWhitespace": true,
