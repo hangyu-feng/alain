@@ -92,3 +92,4 @@ if (!(test-path $profile)) {
   touch $profile
 }
 echo ". ~/alain/configs/powershell/Microsoft.PowerShell_profile.ps1" >> $profile
+. $profile
