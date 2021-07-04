@@ -77,12 +77,13 @@ iwr -useb -URI $vscode_settings_url -outfile $vscode_settings_path
 
 # install vscode extensions
 
-foreach ($extension in $vscode_extensions) {
-  code --install-extension $extension
-}
+# foreach ($extension in $vscode_extensions) {
+#   code --install-extension $extension
+# }
 
 # powershell settings
 git clone "git@github.com:hangyu-feng/alain.git" ~
+pwsh
 $parent_dir = Split-Path $profile -Parent
 if (!(test-path $parent_dir)) {
   mkdir $parent_dir
@@ -90,4 +91,4 @@ if (!(test-path $parent_dir)) {
 if (!(test-path $profile)) {
   touch $profile
 }
-sudo pwsh -c "echo '. ~/alain/configs/powershell/Microsoft.PowerShell_profile.ps1' >> $profile"
+echo ". ~/alain/configs/powershell/Microsoft.PowerShell_profile.ps1" >> $profile
