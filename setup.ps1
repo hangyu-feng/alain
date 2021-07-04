@@ -52,7 +52,7 @@ $vscode_extensions = @(
   'zhuangtongfa.material-theme'
 )
 
-$programs = @('vscode', 'selenium', 'psutils')
+$programs = @('vscode', 'selenium', 'psutils', 'pwsh')
 $fonts = @('Cascadia-Code', 'FiraCode', 'hack-font', 'Inconsolata-NF', 'JetBrains-Mono', 'SourceCodePro-NF')
 
 # install scoop
