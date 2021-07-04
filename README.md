@@ -37,3 +37,5 @@ iwr -useb "https://raw.githubusercontent.com/hangyu-feng/alain/master/setup.ps1"
     - JetBrains-Mono
 
     - SourceCodePro-NF'
+
+4. Install powershell settings
