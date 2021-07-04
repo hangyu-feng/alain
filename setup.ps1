@@ -91,7 +91,7 @@ pwsh -c {
   if (!(test-path $profile)) {
     touch $profile
   }
-  . ~/alain/configs/powershell/install_powerline.ps1
+  . ~/alain/configs/powershell/scripts/install_powerline.ps1
   echo ". ~/alain/configs/powershell/Microsoft.PowerShell_profile.ps1" >> $profile
   . $profile
 }
