@@ -4,7 +4,7 @@ tailored setup script for alain
 
 ----------
 
-To use the script:
+## To use the script
 
 1. open powershell
 
@@ -17,3 +17,23 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 
 iwr -useb "https://raw.githubusercontent.com/hangyu-feng/alain/master/setup.ps1" | iex
 ```
+
+## Description
+
+1. Install programs - [scoop](https://scoop.sh/), [vscode](https://code.visualstudio.com/), selenium, [psutils](https://github.com/lukesampson/psutils), [pwsh](https://github.com/powershell/powershell)
+
+2. Install settings and extensions for vscode
+
+3. Install fonts
+
+    - Cascadia-Code
+
+    - FiraCode
+
+    - hack-font
+
+    - Inconsolata-NF
+
+    - JetBrains-Mono
+
+    - SourceCodePro-NF'
