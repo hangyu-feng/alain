@@ -82,7 +82,7 @@ iwr -useb -URI $vscode_settings_url -outfile $vscode_settings_path
 # }
 
 # powershell settings
-git clone "https://github.com/hangyu-feng/alain.git" ~
+git clone "https://github.com/hangyu-feng/alain.git" $env:USERPROFILE/alain
 pwsh -c {
   $parent_dir = Split-Path $profile -Parent
   if (!(test-path $parent_dir)) {
